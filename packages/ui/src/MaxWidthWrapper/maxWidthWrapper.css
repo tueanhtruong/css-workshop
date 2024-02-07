@@ -1,0 +1,9 @@
+.maxWidthWrapper {
+  display: inline-block;
+  max-width: 50%;
+  /* padding-left: 32px;
+  padding-right: 32px; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  @apply px-8 mx-auto;
+}

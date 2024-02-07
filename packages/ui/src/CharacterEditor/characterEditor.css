@@ -1,6 +1,7 @@
 .characterEditor {
   padding-top: 128px;
   padding-bottom: 64px;
+  position: relative;
 }
 
 .maxWidthWrapper {
@@ -24,6 +25,13 @@
 }
 
 .characterWrapper {
+  margin-inline: auto;
+  max-width: 34%;
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  position: sticky;
+  top: 128px;
 }
 
 .controlColumn {

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import React from "react";
-import styles from "./MaxWidthWrapper.module.css";
+import "./maxWidthWrapper.css";
 
 export function MaxWidthWrapper({
   children,
@@ -11,7 +11,7 @@ export function MaxWidthWrapper({
   className?: string;
 } & React.ComponentProps<"div">): JSX.Element {
   return (
-    <div className={`${styles.maxWidthWrapper} ${className}`} {...delegated}>
+    <div className={`maxWidthWrapper ${className}`} {...delegated}>
       {children}
     </div>
   );

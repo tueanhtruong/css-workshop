@@ -1,6 +1,5 @@
 /* eslint-disable import/no-cycle */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+
 /* eslint-disable import/no-named-as-default-member */
 import React from "react";
 import { defaultSkinColor, defaultClothesColor } from "../constants";
@@ -13,7 +12,7 @@ import {
   skinColorOptions,
   clothesColorOptions,
 } from "./helpers";
-import styles from "./characterEditor.module.css";
+import "./characterEditor.css";
 
 export function CharacterEditor(): JSX.Element {
   const [body, setBody] = React.useState(0);
@@ -24,16 +23,16 @@ export function CharacterEditor(): JSX.Element {
   const [clothesColor, setClothesColor] = React.useState(defaultClothesColor);
 
   return (
-    <main className={styles.characterEditor}>
-      <MaxWidthWrapper className={styles.maxWidthWrapper}>
-        <header className={styles.header}>
-          <h1 className={styles.title}>Create your Character</h1>
-          <p className={styles.description}>
+    <main className="characterEditor">
+      <MaxWidthWrapper className="maxWidthWrapper">
+        <header className="header">
+          <h1 className="title">Create your Character</h1>
+          <p className="description">
             Customize your character&apos;s look and style using the controls
             below. What sort of adventure will you embark on?{" "}
           </p>
         </header>
-        <div className={styles.controlColumn}>
+        <div className="controlColumn">
           <ControlPane
             currentOption={body}
             handleSelectOption={setBody}
@@ -73,7 +72,7 @@ export function CharacterEditor(): JSX.Element {
         </div>
       </MaxWidthWrapper>
 
-      <div className={styles.characterWrapper}>
+      <div className="characterWrapper">
         <Character
           accessory={accessory}
           body={body}

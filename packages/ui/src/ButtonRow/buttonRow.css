@@ -1,0 +1,6 @@
+.button-row {
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  text-wrap: auto;
+}
